@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { Toaster } from "@/components/ui/sonner";
@@ -11,7 +11,7 @@ interface MainLayoutProps {
 }
 
 export const MainLayout = ({ children }: MainLayoutProps) => {
-    const location = useLocation();
+    // const location = useLocation();
     // const isHomePage = location.pathname === "/";
     const isHomePage = true;
 
@@ -27,7 +27,7 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
 
                         {/* Grid Pattern */}
                         <div className="absolute inset-0 bg-[image:var(--background-image-grid-pattern-light)] dark:bg-[image:var(--background-image-grid-pattern)] opacity-[0.6] dark:opacity-[0.4]" />
-                        
+
                         {/* Radial Fade for Grid */}
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/80" />
                     </div>
